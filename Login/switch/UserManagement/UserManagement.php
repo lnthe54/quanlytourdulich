@@ -62,7 +62,7 @@ div.overlay {
 <a class="btn btn-danger" href="http://localhost/quanlydulich/Login/switch/UserManagement/export.php?export=true">Xuất ra danh sách</a>
 
 <div class="overlay container" style="display:none;">
-    <form method="post" action="success.php?action=delete" class="row container">
+    <form method="post" action="success.php?action=insertUser" class="row container">
         <label class="col-4 text-warning font-weight-bold" style="margin-top:15px;">
             USERNAME: 
             <input type="text" name="email"  placeholder="Example: a@gmail.com"/>
@@ -99,8 +99,8 @@ div.overlay {
                     <th class='col-1 text-center text-primary'>$row[$id]</th>
                     <th class='col-3 text-center text-primary'>$row[$user]</th>
                     <th class='col-3 text-center' style='color:light'>$row[$pass]</th>
-                    <th class='col-2 text-center'><a action='success.php?action=updateUser' style='text-decoration: none;'><button class='btn btn-warning col-6' name='MaKH' value='$row[$id]'>Sửa</button></a></th>
-                    <th class='col-2 text-center'><a action='success.php?action=deleteUser' style='text-decoration: none;'><button class='btn btn-danger col-6' name='MaKH' value='$row[$id]'>Xóa</button></a></th>
+                    <th class='col-2 text-center'><a href='success.php?action=updateUser' style='text-decoration: none;'><button class='btn btn-warning col-6' name='MaKH' value='$row[$id]'>Sửa</button></a></th>
+                    <th class='col-2 text-center'><a href='success.php?action=deleteUser' style='text-decoration: none;'><button class='btn btn-danger col-6' name='MaKH' value='$row[$id]'>Xóa</button></a></th>
                 </tr>
             ";
         }
