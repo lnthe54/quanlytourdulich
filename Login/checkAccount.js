@@ -1,17 +1,17 @@
+
 function check(){
-var passwordCheckout = document.getElementById("password").value ;
-var usernameCheckout = document.getElementById("username").value ;
-var login = false;
+    var passwordCheckout = document.getElementById("password").value ;
+    var usernameCheckout = document.getElementById("username").value ;
     if(passwordCheckout === "a123456" && usernameCheckout === "admin123"){
-        login = true;
-    }
-    else{
-        alert("Wrong PassWord or UserName");
-    }
-    if(login === true){
-        return true;
-    }
-    else{
+        window.location = "success.php";
         return false;
+    }
+    else{
+        alert("Wrong Passwrd or Username");
+
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("submit").disabled = true;
+        return false
     }
 }

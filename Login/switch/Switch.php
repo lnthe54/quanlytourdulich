@@ -32,5 +32,17 @@ switch($action){
         include("tourManagement/tourManagement.php");
         break;
     }
+    case 'insertTour':{
+        include("tourManagement/insert.html");
+        break;
+    }
+    case 'deleteTour':{
+        include("tourManagement/deleteTour.php");
+        break;
+    }
+    case 'updateTour':{
+        include("tourManagement/updateTour.php");
+        break;
+    }
 }
 ?>

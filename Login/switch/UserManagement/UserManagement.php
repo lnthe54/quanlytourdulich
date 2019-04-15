@@ -99,8 +99,8 @@ div.overlay {
                     <th class='col-1 text-center text-primary'>$row[$id]</th>
                     <th class='col-3 text-center text-primary'>$row[$user]</th>
                     <th class='col-3 text-center' style='color:light'>$row[$pass]</th>
-                    <th class='col-2 text-center'><a href='success.php?action=updateUser' style='text-decoration: none;'><button class='btn btn-warning col-6' name='MaKH' value='$row[$id]'>Sửa</button></a></th>
-                    <th class='col-2 text-center'><a href='success.php?action=deleteUser' style='text-decoration: none;'><button class='btn btn-danger col-6' name='MaKH' value='$row[$id]'>Xóa</button></a></th>
+                    <th class='col-2 text-center'><a href='http://localhost/quanlytour/Login/switch/UserManagement/update.php?MaKH=$row[$id]' style='text-decoration: none;'><button class='btn btn-warning col-6'>Sửa</button></a></th>
+                    <th class='col-2 text-center'><a href='http://localhost/quanlytour/Login/switch/UserManagement/delete.php?MaKH=$row[$id]' style='text-decoration: none;'><button class='btn btn-danger col-6'>Xóa</button></a></th>
                 </tr>
             ";
         }
