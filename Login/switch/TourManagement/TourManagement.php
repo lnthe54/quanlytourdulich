@@ -63,7 +63,7 @@ div.overlay {
                     <th class='col-1 text-center'>$row[$price]$</th>
                     <th class='col-1.5 text-center '>$row[$time]</th>
                     <th class='col-1 text-center '>$row[$sale]%</th>
-                    <th class='col-2 text-center'><a href='http://localhost/quanlytour/Login/switch/TourManagement/updateTour.html' style='text-decoration: none;'><button class='btn btn-warning col-4'>Sửa</button></a></th>
+                    <th class='col-2 text-center'><a href='http://localhost/quanlytour/Login/switch/TourManagement/update.php?MaTour=$row[$maTour]' style='text-decoration: none;'><button class='btn btn-warning col-4'>Sửa</button></a></th>
                     <th class='col-2 text-center'><a href='http://localhost/quanlytour/Login/switch/TourManagement/deleteTour.php?MaTour=$row[$maTour]' style='text-decoration: none; margin-right: 200px;'><button class='btn btn-danger col-4'>Xóa</button></a></th>
                 </tr>
             ";

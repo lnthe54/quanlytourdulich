@@ -25,7 +25,7 @@ switch($action){
         break;
     }
     case 'updateUser':{
-        include("userManagement/update.php");
+        include("userManagement/updateUser.php");
         break;
     }
     case 'tour':{
